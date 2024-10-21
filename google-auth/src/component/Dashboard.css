@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+
+  .dashboard-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background: linear-gradient(-45deg, #ee7752, #b93ce7b8, #a0d52386, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+  .dashboard-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+
+  .input-field {
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .input-field:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+  }
+  
+  .input-field:hover {
+    border-color: #2980b9;
+  }
+  
+
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+  }
+  
+  .submit-button:active {
+    transform: scale(0.98);
+  }
+  
+  .record-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  
+  .record-table thead {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .record-table th,
+  .record-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .record-table th {
+    text-transform: uppercase;
+  }
+  
+  .record-table tbody tr {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .record-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .record-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .edit-button {
+    background-color: #f39c12;
+    color: #ffffff;
+  }
+  
+  .edit-button:hover {
+    background-color: #e67e22;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: #ffffff;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .edit-button:active,
+  .delete-button:active {
+    transform: scale(0.95);
+  }
